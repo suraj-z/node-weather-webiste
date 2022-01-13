@@ -7,7 +7,7 @@ const geocode=require('./utils/getcode');
 const forecast=require('./utils/forecast')
 
 const app = express()
-
+const port=process.env.PORT || 3000;
 
 //paths for express configurations
 const publicdirectorypath=path.join(__dirname, '../public');
@@ -95,11 +95,6 @@ app.get('/help/*' , (req,res) =>{
 })
 
 
-
-
-
-
-
 // app.get('', (req, res) => {
 //     res.send('Hello! You are on Home Page');
 // })
@@ -113,6 +108,6 @@ app.get('/help/*' , (req,res) =>{
 //     res.send([{name:'suraj'},
 //     { age : 22}])
 // });
-app.listen(3000, () => {
-    console.log('hello Expresss');
+app.listen(port, () => {
+    console.log('hello Expresss, server is at port ' +port);
 })
