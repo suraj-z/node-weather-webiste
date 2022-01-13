@@ -68,6 +68,6 @@ form button{
 }
 form button:hover{
     background-color: black;
-    color: rgb(0,255,255);
+    color: rgb(18, 194, 194);
     transform: scale(1.2);
 }
