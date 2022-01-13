@@ -35,7 +35,7 @@ app.get('' , (req,res)  => {
 app.get('/about' , (req,res)  => {
     res.render('about' , {
         title : 'About' ,
-        // owner : 'Suraj Zurange',
+        owner : 'Suraj Zurange',
         about_us : 'Use this site for weather updates'
     });
 })
@@ -43,7 +43,7 @@ app.get('/about' , (req,res)  => {
 app.get('/help' , (req,res) =>{
     res.render('help' , {
         title : 'Help' ,
-        // owner : 'Suraj Zurange',
+        owner : 'Suraj Zurange',
         help : 'Use this site for weather updates'
     })
 })
